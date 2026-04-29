@@ -1,0 +1,351 @@
+body {
+    margin:0;
+    font-family: sans-serif;
+    background:#f8f9fc;
+}
+
+
+header {
+    position:sticky;
+    width:100%;
+    background:white;
+    padding:15px;
+       
+}
+
+#sidebar1 {
+    grid-row:span 1; 
+    background: rgb(61, 129, 134);
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 55vh;
+}
+
+#sidebar1 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 160px 1fr; /* sidebar fina + conteúdo */
+    grid-template-rows: auto auto;
+    min-height: 75vh;
+    border-bottom: 1px solid #ccc;
+     position:sticky;
+     
+}
+
+
+.sidebar {
+    grid-row: 1 / span 2; 
+    background: rgb(61, 129, 134);
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    
+}
+
+
+.hero {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px;
+    color: white;
+     border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    
+
+    
+    
+
+
+}
+
+
+
+.hero h2 {
+  font-size: 80px;
+  font-weight: 900;
+  background: linear-gradient to bottom,
+    #ffffff,
+    rgb(17, 129, 129);
+    text-shadow:
+    1px 1px 0 #0d6b6b,
+    2px 2px 0 #0b5a5a,
+    3px 3px 0 #094949,
+    4px 4px 10px rgba(0,0,0,0.4);
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+
+.hero1 {
+    padding: 0px;
+    background: #f9f9f9;
+}
+
+.hero1 h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.hero1 p {
+    max-width: 750px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: center;
+     margin: auto;
+}
+
+.hero :hover
+
+{
+    
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+
+.section {
+    max-width:1000px;
+    margin:auto;
+    padding:80px 20px;
+    text-align: center;
+    color: #333;
+}
+
+
+.cards {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+
+.card {
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-decoration:none;
+    color:inherit;
+}
+
+
+.card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    align-items:center;
+}
+
+
+.card-content {
+    padding:15px;
+}
+
+.card:hover {
+    border:1px solid #333;
+    cursor:pointer;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.card.disabled {
+    opacity:0.5;
+    border:1px solid #ccc;  
+    box-shadow:none;
+    pointer-events:none;
+}
+
+
+.Roteiros {
+    width:80%;
+    height:300px;
+    background: rgb(33, 158, 158);
+    color:white;
+    text-align:center;
+    padding:0;
+    margin:10%;
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-areas: auto auto auto;   
+    flex-direction:column;  
+    border-style: groove;
+    
+
+}
+
+
+.lista {
+    width:100%;
+    height:300px;
+    background: rgb(17, 129, 129);
+    color:white;
+    text-align:center;
+    padding:0;
+    margin:1%;
+    display:flex;
+    flex-direction:column;  
+
+}
+
+.lista ul {
+    display: flex;
+    list-style:none;
+    padding: 20px;
+    margin: 20px;
+    justify-content:center;
+    gap:20px;
+}
+
+.lista ul li {
+    display:inline;
+}
+
+.lista ul li a {
+    color: rgb(65, 63, 63);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.lista ul li a:hover {
+    color:white;
+    padding:5px;
+    border-radius:5px;  
+    background:grey;
+
+}
+
+
+
+.lista section a {
+    color:white;
+    padding:5px;
+    border-radius:5px;  
+    background:grey;
+     color: rgb(65, 63, 63);
+}
+
+.container {
+      background:#333;
+      border-radius:15px;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.container ul li {
+    display:inline;
+}
+
+.container ul li a {
+    color: grey;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.container ul li a:hover {
+    color:white;
+    padding:5px;
+    border-radius:20px;  
+    background:grey;
+
+}
+
+.section h2 {
+    margin-bottom:40px;
+    color: #333;
+    text-align:center;
+    padding:20px;
+}
+
+button {
+    background:#138585;
+    color:rgb(17, 129, 129);
+    border:transparent;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:25px;
+    position:fixed;
+    bottom:20px;
+}
+
+
+
+.secao-depoimentos {
+  background-color: #f0f4f8; /* Um tom suave para destacar a seção */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container-flex-depoimentos {
+  display: flex;
+  flex-direction: row;      /* Mantém os itens em linha */
+  justify-content: center;   /* Centraliza os cards */
+  gap: 25px;                /* Espaço entre os depoimentos */
+  flex-wrap: wrap;          /* Se a tela for pequena, eles pulam para baixo */
+}
+
+.card-depoimento {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;                  /* Faz os cards terem larguras iguais */
+  max-width: 350px;         /* Evita que fiquem largos demais em telas grandes */
+  display: flex;
+  flex-direction: column;   /* Alinha texto e autor verticalmente dentro do card */
+  justify-content: space-between;
+}
+
+.mensagem {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.autor strong {
+  display: block;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
