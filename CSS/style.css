@@ -1,3 +1,5 @@
+
+/* RESET */
 body {
     margin: 0;
     font-family: sans-serif;
@@ -8,7 +10,7 @@ body {
     box-sizing: border-box;
 }
 
-
+/* HEADER / GRID */
 header {
     display: grid;
     grid-template-columns: 160px 1fr;
@@ -20,7 +22,7 @@ header {
     padding: 15px;
 }
 
-
+/* SIDEBAR */
 .sidebar {
     grid-row: 1 / span 2;
     background: linear-gradient(180deg, rgb(61, 129, 134), rgb(17, 129, 129));
@@ -45,7 +47,7 @@ header {
     color: #e0ffff;
 }
 
-
+/* HERO */
 .hero {
     height: 55vh;
     display: flex;
@@ -78,7 +80,7 @@ header {
     font-size: 1.1rem;
 }
 
-
+/* HERO SECUNDÁRIO */
 .hero1 {
     padding: 0;
     background: #f9f9f9;
@@ -96,7 +98,7 @@ header {
     text-align: center;
 }
 
-
+/* SECTION */
 .section {
     max-width: 1000px;
     margin: auto;
@@ -110,14 +112,14 @@ header {
     padding: 20px;
 }
 
-
+/* GRID CARDS */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-
+/* CARD */
 .card {
     position: relative;
     background: rgba(255, 255, 255, 0.6);
@@ -171,7 +173,7 @@ header {
     pointer-events: none;
 }
 
-
+/* ROTEIROS */
 .Roteiros {
     width: 80%;
     height: 300px;
@@ -183,7 +185,7 @@ header {
     border-style: groove;
 }
 
-
+/* LISTA */
 .lista {
     width: 100%;
     height: 300px;
@@ -218,7 +220,7 @@ header {
     background: grey;
 }
 
-
+/* CONTAINER */
 .container {
     background: #333;
     border-radius: 15px;
@@ -248,7 +250,7 @@ header {
     background: grey;
 }
 
-
+/* BOTÃO */
 button {
     background: #138585;
     color: white;
@@ -268,7 +270,9 @@ button:hover {
     background: #0f6f6f;
 }
 
-
+/* ========================= */
+/* DEPOIMENTOS */
+/* ========================= */
 
 .secao-depoimentos {
   background: linear-gradient(180deg, #f0f4f8, #e6eef5);
