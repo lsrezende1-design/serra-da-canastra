@@ -1,4 +1,3 @@
-
 /* RESET */
 body {
     margin: 0;
@@ -15,11 +14,12 @@ header {
     display: grid;
     grid-template-columns: 160px 1fr;
     grid-template-rows: auto auto;
-    min-height: 75vh;
+    min-height: 55vh;
     border-bottom: 1px solid #ccc;
     background: white;
     z-index: 10;
     padding: 15px;
+    align-items: stretch;
 }
 
 /* SIDEBAR */
@@ -47,12 +47,42 @@ header {
     color: #e0ffff;
 }
 
+#sidebar1 {
+    grid-row: 1;
+    background: linear-gradient(180deg, rgb(61,129,134), rgb(17,129,129));
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    position: sticky;
+    top: 20px;
+    height: 100%;
+    border-radius: 5%;}
+
+    sidebar a, #sidebar1 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;}
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+
 /* HERO */
 .hero {
+
+    
     height: 55vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 0;
     color: white;
     border-radius: 15px;
@@ -61,14 +91,48 @@ header {
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     transition: transform 0.4s ease;
     will-change: transform;
+    background-size: cover;
+    background-position: center top;
 }
 
 .hero:hover {
     transform: translateY(-6px);
 }
 
+.hero > div{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    word-break: break-word;
+
+}
+
+@media (max-width: 768px) {
+    .hero > div {
+        max-width: 90%;
+        padding: 12px;
+    }
+
+    .hero h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+    }
+}
+
+
 .hero h2 {
-    font-size: 80px;
+    font-size: clamp (1.5rem, 5vw, 5rem);
     font-weight: 900;
     background: linear-gradient(to bottom, #ffffff, rgb(200, 255, 255));
     -webkit-background-clip: text;
@@ -93,9 +157,10 @@ header {
 
 .hero1 p {
     max-width: 750px;
-    line-height: 1.7;
+    line-height: 1.5;
     margin: auto;
     text-align: center;
+    padding: 10px;
 }
 
 /* SECTION */
@@ -176,7 +241,8 @@ header {
 /* ROTEIROS */
 .Roteiros {
     width: 80%;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     background: rgb(33, 158, 158);
     color: white;
     text-align: center;
@@ -187,14 +253,16 @@ header {
 
 /* LISTA */
 .lista {
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
+    min-height: 300px;
+    height: auto;
     background: rgb(17, 129, 129);
     color: white;
     text-align: center;
     margin: 1%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .lista ul {
@@ -204,6 +272,7 @@ header {
     margin: 20px;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .lista ul li a {
@@ -338,21 +407,3 @@ button:hover {
   font-size: 1.1rem;
 }
 
-#sidebar1 {
-    grid-row: 1 / span 2;
-    background: linear-gradient(180deg, rgb(61,129,134), rgb(17,129,129));
-    padding: 25px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    position: sticky;
-    top: 20px;
-    height: 78%;
-    border-radius: 5%;}
-
-    sidebar a, #sidebar1 a {
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    transition: all 0.3s ease;}
